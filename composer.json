@@ -1,7 +1,7 @@
 {
     "name": "autoxloo/rest-api-doc",
     "type": "yii2-extension",
-    "description": "For of https://github.com/nostop8/yii2-rest-api-doc",
+    "description": "Fork of https://github.com/nostop8/yii2-rest-api-doc",
     "keywords": ["yii2", "rest", "api", "generator", "documentation"],
     "license": "MIT",
     "authors": [
