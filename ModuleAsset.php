@@ -1,6 +1,6 @@
 <?php
 
-namespace nostop8\yii2\rest_api_doc;
+namespace autoxloo\yii2\rest_api_doc;
 
 class ModuleAsset extends \yii\web\AssetBundle
 {
@@ -8,7 +8,7 @@ class ModuleAsset extends \yii\web\AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vendor/nostop8/rest-api-doc/assets';
+    public $sourcePath = '@vendor/autoxloo/rest-api-doc/assets';
 
     /**
      * @inheritdoc

@@ -1,6 +1,6 @@
 <?php
 
-namespace nostop8\yii2\rest_api_doc\controllers;
+namespace autoxloo\yii2\rest_api_doc\controllers;
 
 use yii\helpers\BaseInflector;
 use yii\helpers\Inflector;
@@ -11,7 +11,7 @@ class DefaultController extends \yii\base\Controller
     public function init()
     {
         $view = $this->getView();
-        \nostop8\yii2\rest_api_doc\ModuleAsset::register($view);
+        \autoxloo\yii2\rest_api_doc\ModuleAsset::register($view);
         parent::init();
     }
 
@@ -94,6 +94,7 @@ class DefaultController extends \yii\base\Controller
             if (!empty($rule['fields'])) {
                 $fileFields = [];
                 $rule['fields'] = $this->_fieldsFlip($rule['fields'], $fileFields);
+                $this->_fieldsFlip($rule['fields'], $fileFields);
                 $rule['fileFields'] = $fileFields;
             }
 
