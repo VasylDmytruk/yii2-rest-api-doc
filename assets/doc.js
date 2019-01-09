@@ -117,7 +117,7 @@
                 $('.final-url', response).text(url);
                 $('.text', response).text(jqXHR.statusText);
                 if (jqXHR.responseText) {
-                    $('.body', response).JSONView(prettify(jqXHR.responseText), {collapsed: jqXHR.status.toString().indexOf('20') === 0 ? true : false});
+                    $('.body', response).JSONView(prettify(jqXHR.responseText));
                 } else {
                     $('.body', response).html('<div class="text-danger">Empty</div>');
                 }
