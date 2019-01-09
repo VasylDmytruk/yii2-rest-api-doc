@@ -93,7 +93,7 @@ class DefaultController extends \yii\base\Controller
 
             if (!empty($rule['fields'])) {
                 $fileFields = [];
-                $rule['fields'] = $this->_fieldsFlip($rule['fields'], $fileFields);
+//                $rule['fields'] = $this->_fieldsFlip($rule['fields'], $fileFields);
                 $this->_fieldsFlip($rule['fields'], $fileFields);
                 $rule['fileFields'] = $fileFields;
             }
