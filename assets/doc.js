@@ -39,11 +39,11 @@
             $bodyField.val(prettify($(this).text()));
         });
 
-        $('#token, #base_url').each(function () {
+        $('#token').each(function () {
             $(this).val(localStorage.getItem('rest_api_doc_' + $(this).attr('id')));
         });
 
-        $('#token, #base_url').change(function () {
+        $('#token').change(function () {
             localStorage.setItem('rest_api_doc_' + $(this).attr('id'), $(this).val());
         });
 

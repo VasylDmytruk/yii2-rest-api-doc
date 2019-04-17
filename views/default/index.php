@@ -21,7 +21,7 @@ $methodColorMap = [
     <div class="row">
         <div class="col-lg-4 pull-left">
             <div class="form-group">
-                <input class="form-control " type="text" id="base_url" placeholder="Base URL" <?= $baseApiUrl ?>/>
+                <input class="form-control " type="text" id="base_url" placeholder="Base URL" value="<?= $baseApiUrl ?>"/>
             </div>
         </div>
         <div class="col-lg-4 pull-right">
