@@ -2,6 +2,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
+/* @var $baseApiUrl string */
 
 $this->title = 'Documentation';
 
@@ -20,7 +21,7 @@ $methodColorMap = [
     <div class="row">
         <div class="col-lg-4 pull-left">
             <div class="form-group">
-                <input class="form-control " type="text" id="base_url" placeholder="Base URL" />
+                <input class="form-control " type="text" id="base_url" placeholder="Base URL" <?= $baseApiUrl ?>/>
             </div>
         </div>
         <div class="col-lg-4 pull-right">

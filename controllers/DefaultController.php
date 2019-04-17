@@ -2,6 +2,7 @@
 
 namespace autoxloo\yii2\rest_api_doc\controllers;
 
+use autoxloo\yii2\rest_api_doc\Module;
 use yii\helpers\BaseInflector;
 use yii\helpers\Inflector;
 
@@ -35,8 +36,16 @@ class DefaultController extends \yii\base\Controller
                 $rules[] = $entity;
             }
         }
+
+        $baseApiUrl = '';
+
+        if ($this->module instanceof Module) {
+            $baseApiUrl = $this->module->baseApiUrl;
+        }
+
         return $this->render('index', [
-                'rules' => $rules,
+            'rules' => $rules,
+            'baseApiUrl' => $baseApiUrl,
         ]);
     }
 
